@@ -1,0 +1,52 @@
+.playerCard {
+    background: rgb(70, 70, 70);
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 14%;
+
+    h1 {
+        margin: 0;
+    }
+    h2 {
+        color: white;
+        margin: 0;
+        font-size: 2rem;
+    }
+    h3 {
+        margin: 0;
+        color: lightgreen;
+        font-size: 1.7rem;
+    }
+
+    .buttons {
+        margin-top: 1em;
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        button {
+            border: none;
+            border-radius: 1em;
+            background-color: black;
+            color: white;
+            width: 6em;
+            height: 3em;
+            transition: 0.25s;
+        }
+        button:hover {
+            filter: drop-shadow(0 0 0.5rem black);
+            transform: translate(0, -5%);
+        }
+        .addButton {
+            background-color: #2ecc71;
+        }
+
+        .removeButton {
+            background-color: #e74c3c;
+        }
+    }
+}
