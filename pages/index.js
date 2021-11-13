@@ -14,10 +14,11 @@ export default function Home() {
       </div>
 
       {/* <button className={buttonstyles.button} onClick={() => {
-        let curChilds = document.querySelector('.players').childNodes();
-        curChilds.push(<Player />);
+        let plys = document.querySelector('.players');
+        let newElement = document.createElement('div');
+        plys.appendChild(newElement);
 
-        ReactDOM.render(curChilds, document.querySelector('.players'));
+        ReactDOM.render(curChilds, newElement);
       }}>Add Player</button> */}
     </div>
   )
